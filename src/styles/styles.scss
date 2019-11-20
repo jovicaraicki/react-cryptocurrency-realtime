@@ -1,0 +1,92 @@
+// Import Google Font - Raleway 300 & 700
+// @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+@import './base';
+@import './header';
+@import './coingrid';
+@import './footer'; 
+
+// body {
+//   background: $body-background;
+//   color: $main-font-color;
+// //   font-family: $sans-serif;
+// //   font-size: 1.2rem;
+// //   line-height: 1.45;
+// //   display: flex;
+// //   flex-wrap: wrap;
+// }
+
+
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(autofit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.portfolio-item {
+    border: 1px solid white;
+    background: transparent;
+    color: $light-gray;
+    font-weight: $font-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // &.small {
+    //     grid-row: span 1;
+    //     grid-column: span 1;
+    // }
+
+    // &.medium {
+    //     grid-row: span 2;
+    //     grid-column: span 2;
+    // }
+
+    // &.large {
+    //     grid-row: span 3;
+    //     grid-column: span 3;
+    // }
+
+    // &.tall {
+    //     grid-row: span 3;
+    //     grid-column: span 2;
+    // }
+
+    // &.wide {
+    //     grid-row: span 2;
+    //     grid-column: span 3;
+    // }
+}
+
+// .two {
+//     background-image: url('https://images.unsplash.com/photo-1572365513239-1f7b71f1eb51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+//     color: $light-gray;
+//     background-size: cover;
+//     background-position: top left;
+//     transition: all ease-in-out 300ms;
+//     position: relative;
+//     z-index: 10;
+
+//     &::before {
+//         content: '';
+//         display: block;
+//         background: $black;
+//         opacity: 0.8;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         transition: all ease-in-out 300ms;
+//         z-index: -1;
+//     }
+
+//     &:hover::before {
+//         background-position: center;
+//         opacity: 0.2;
+//     }
+
+// }

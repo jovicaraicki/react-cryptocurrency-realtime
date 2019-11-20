@@ -1,0 +1,35 @@
+// ===================
+// Font and color variables
+// ===================
+
+// Fonts
+$montserrat: 'Montserrat';
+$font-light: 300;
+$font-bold: 700;
+
+// Colors
+$black: #353535;
+$gray: #4f4f4f;
+$medium-gray: #737373;
+$light-gray: #c4c4c4;
+$orange: #f96855;
+
+// Semantic color names
+$accent: $orange;
+
+$body-background: $black;
+$menu-background: $gray;
+
+$main-font-color: $light-gray;
+$menu-active-color: $light-gray;
+$menu-font-color: $medium-gray;
+$link-color: $accent;
+
+// ===================
+// General styles
+// ===================
+
+* { 
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
