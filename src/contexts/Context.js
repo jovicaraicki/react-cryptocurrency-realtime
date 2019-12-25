@@ -9,7 +9,8 @@ const Context = createContext({
     isWideEnough: false,
     crypto: 'USD',
     ticker: null,
-    currency: '$'
+    currency: '$',
+    availableCryptos: ['BTC','ETH','USDT','BCH','LTC','DASH','EOS','XRP']
 });
 
 export default Context;

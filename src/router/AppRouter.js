@@ -10,9 +10,12 @@ import Footer from '../components/Footer';
 const AppRouter = () => {
     const [counter, setCounter] = useState(0);
     const {state, dispatch} = useContext(Context);
+    // console.log(state.availableCryptos.toString());
+
+    const availableCryptos = state.availableCryptos.toString();
 
     useEffect(() => {
-      axios.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,USDT,BCH,LTC,DASH,EOS&tsyms=USD,EUR,GBP,CHF,CAD,RSD&api_key=f49d870e368eea9dacece44f8adee854ac99f5b558b3958161f29cbe17a3b918')
+      axios.get(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${availableCryptos}&tsyms=USD,EUR,GBP,CHF,CAD,RSD&api_key=f49d870e368eea9dacece44f8adee854ac99f5b558b3958161f29cbe17a3b918`)
         .then(res => {
           const socketArray = [];
             Object.keys(res.data.RAW).map(key => {

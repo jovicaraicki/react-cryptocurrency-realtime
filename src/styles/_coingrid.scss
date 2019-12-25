@@ -20,7 +20,7 @@ main.main-header {
 }
 
 $i: -1;
-@for $i from -1 through 5 {
+@for $i from -1 through 7 {
     $i: $i + 1;
     .box-header-#{$i} {
     border: 1px solid #aaa;
